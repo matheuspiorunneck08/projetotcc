@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking — ATHLETIQ AI</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="index.html" class="nav-brand">ATHLETIQ AI</a>
+            <ul class="nav-links" style="list-style:none; display:flex; gap:32px;">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="/src/pages/produto.html">Produto</a></li>
+                <li><a href="/src/pages/instrucoes.html">Instruções</a></li>
+                <li><a href="/src/pages/equipe.html">Equipe</a></li>
+                <li><a href="/src/pages/referencias.html">Referências</a></li>
+                <li><a href="/src/pages/jogo.html">Jogo</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+                <a href="#" class="btn btn-primary">Começar Agora</a>
+                <button class="nav-mobile-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="rank-hero">
+            <h1>Ranking de Performance</h1>
+            <p>Veja sua evolução, compare desempenho e suba no ranking dos desafios ATHLETIQ AI.</p>
+            <div class="rank-hero-actions">
+                <a href="jogo.html" class="btn btn-primary" style="background:var(--brand); padding:14px 32px;">🏁
+                    Começar Novo Desafio</a>
+                <a href="#stats" class="btn btn-outline" style="border-color:var(--brand); color:var(--brand);">Ver
+                    Estatísticas</a>
+            </div>
+        </section>
+
+        <!-- Pódio -->
+        <section class="podium" aria-label="Pódio dos melhores colocados">
+            <div class="podium-item second">
+                <div class="podium-avatar"><img
+                        src="https://www.figma.com/api/mcp/asset/54319253-d331-4768-9ff2-a7b6a34905ef.png"
+                        alt="Ricardo S.">
+                    <div class="podium-medal">2º</div>
+                </div>
+                <h3>Ricardo S.</h3>
+                <div class="podium-tag">Elite</div>
+                <div class="podium-xp">18.450 XP</div>
+                <div class="podium-base">
+                    <div class="podium-rank-num">2</div>
+                </div>
+            </div>
+            <div class="podium-item first">
+                <div class="podium-avatar"><img
+                        src="https://www.figma.com/api/mcp/asset/b83d47b4-6299-4741-8751-6e718e521cf2.png"
+                        alt="Mariana V.">
+                    <div class="podium-medal">1º</div>
+                </div>
+                <h3>Mariana V.</h3>
+                <div class="podium-tag">Pro Elite</div>
+                <div class="podium-xp">24.120 XP</div>
+                <div class="podium-base"><span class="podium-rank-tag">Champion</span></div>
+            </div>
+            <div class="podium-item third">
+                <div class="podium-avatar"><img
+                        src="https://www.figma.com/api/mcp/asset/33603a88-07c1-4a7f-9967-28f332f2dffe.png"
+                        alt="Bruno K.">
+                    <div class="podium-medal">3º</div>
+                </div>
+                <h3>Bruno K.</h3>
+                <div class="podium-tag">Nível 39</div>
+                <div class="podium-xp">16.900 XP</div>
+                <div class="podium-base">
+                    <div class="podium-rank-num"
+                        style="background:linear-gradient(45deg,#fdba74,#ffedd5); color:#9a341280;">3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard -->
+        <section class="leaderboard" aria-labelledby="leaderboard-heading">
+            <div class="leaderboard-panel">
+                <div class="leaderboard-head">
+                    <h2 id="leaderboard-heading">Ranking Completo</h2>
+                    <div class="leaderboard-toggle"><button>Global</button><button class="active">Minha Liga</button>
+                    </div>
+                </div>
+                <div style="overflow-x:auto;">
+                    <table class="rank-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Atleta</th>
+                                <th>Nível</th>
+                                <th>Experiência (XP)</th>
+                                <th>Desempenho</th>
+                                <th>Conquistas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <div class="rank-athlete"><img
+                                            src="https://www.figma.com/api/mcp/asset/5326624d-7e24-4e31-ac16-33bde68b3f29.png"
+                                            alt=""><span>Nelson G.</span></div>
+                                </td>
+                                <td><span class="rank-level" style="background:#06b6d4;">Pro Elite</span></td>
+                                <td>24.120</td>
+                                <td><span class="rank-perf">+12.4%</span></td>
+                                <td>🏅🥈</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td style="color:var(--brand); font-weight:700;">5</td>
+                                <td>
+                                    <div class="rank-athlete"><img
+                                            src="https://www.figma.com/api/mcp/asset/2cb5fc7c-3e0a-45cc-b472-0acf1be33c1c.png"
+                                            alt=""><span><b>Você</b> (Sasuke U.)</span></div>
+                                </td>
+                                <td><span class="rank-level brand">Nível 29</span></td>
+                                <td>15.280</td>
+                                <td><span class="rank-perf">+8.1%</span></td>
+                                <td>🏅🥉</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <div class="rank-athlete">
+                                        <div class="avatar-fallback">FP</div><span>Felipe P.</span>
+                                    </div>
+                                </td>
+                                <td><span class="rank-level grey">Nível 26</span></td>
+                                <td>14.900</td>
+                                <td><span class="rank-perf">+2.1%</span></td>
+                                <td>🏅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="leaderboard-more">Ver Top 100 Completo</div>
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <div class="stats-heading" id="stats">
+            <h2 style="font-size:16px;">Suas Estatísticas</h2>
+        </div>
+        <section class="user-stats" aria-label="Estatísticas do usuário">
+            <div class="user-stat">
+                <div class="icn">🎯</div>
+                <div class="val">48</div>
+                <div class="lbl">Desafios</div>
+            </div>
+            <div class="user-stat">
+                <div class="icn">⚡</div>
+                <div class="val">12.5 km/h</div>
+                <div class="lbl">Vel. Média</div>
+            </div>
+            <div class="user-stat">
+                <div class="icn">🔥</div>
+                <div class="val">14</div>
+                <div class="lbl">Sequência</div>
+            </div>
+            <div class="user-stat">
+                <div class="icn">🎯</div>
+                <div class="val">96%</div>
+                <div class="lbl">Precisão</div>
+            </div>
+            <div class="user-stat">
+                <div class="icn">⚡</div>
+                <div class="val">840</div>
+                <div class="lbl">Energia</div>
+            </div>
+        </section>
+
+        <!-- Conquistas -->
+        <section class="achievements" aria-labelledby="conquistas-heading">
+            <div class="achievements-panel">
+                <div class="achievements-head">
+                    <div>
+                        <h2 id="conquistas-heading">Minhas Conquistas</h2>
+                        <p>Conquiste badges exclusivos atingindo metas de elite.</p>
+                    </div>
+                    <a href="#">Ver Galeria</a>
+                </div>
+                <div class="badge-grid">
+                    <div class="badge-item">
+                        <div class="badge-circle blue">🏆</div>
+                        <h4>Top 10 Global</h4>
+                        <p>Mantido por 3 meses</p>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-circle green">⚡</div>
+                        <h4>Reflexo Rápido</h4>
+                        <p>Reação sub 0.5s</p>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-circle faded">🔥</div>
+                        <h4>Sequência Elite</h4>
+                        <p>Bloqueado: 30 dias seguidos</p>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-circle locked">🎯</div>
+                        <h4>Mestre da Precisão</h4>
+                        <p>99% de acerto em HIIT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="rank-cta" aria-labelledby="rank-cta-heading">
+            <div class="rank-cta-panel">
+                <h2 id="rank-cta-heading">Pronto para subir no ranking?</h2>
+                <p>Cada treino conta para sua posição global. Supere seus limites e domine a arena ATHLETIQ AI.</p>
+                <a href="jogo.html" class="btn btn-primary"
+                    style="background:var(--brand); display:inline-block; padding:16px 40px; margin-top:16px;">Iniciar
+                    Novo Desafio</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-ranking">
+        <div class="footer-ranking-inner">
+            <div>
+                <span class="footer-brand" style="display:block;">ATHLETIQ AI</span>
+                <p style="font-size:16px; color:var(--text-secondary); max-width:320px; margin-top:8px;">Engenharia de
+                    Elite para Performance Humana. Transformando dados em superação.</p>
+            </div>
+            <nav class="footer-ranking-links" aria-label="Links do rodapé">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Suporte</a>
+                <a href="#">API</a>
+                <a href="#">Laboratórios</a>
+            </nav>
+            <span style="font-size:16px; color:var(--text-secondary); opacity:0.8;">© 2026 ATHLETIQ AI. Todos os
+                direitos reservados.</span>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

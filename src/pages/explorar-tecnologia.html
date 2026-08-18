@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Tecnologia — ATHLETIQ AI</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="index.html" class="nav-brand">ATHLETIQ AI</a>
+            <ul class="nav-links" style="list-style:none; display:flex; gap:32px;">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="/src/pages/produto.html">Produto</a></li>
+                <li><a href="/src/pages/instrucoes.html">Instruções</a></li>
+                <li><a href="/src/pages/equipe.html">Equipe</a></li>
+                <li><a href="/src/pages/referencias.html">Referências</a></li>
+                <li><a href="/src/pages/jogo.html">Jogo</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+                <a href="#" class="btn btn-primary">Começar Agora</a>
+                <button class="nav-mobile-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero -->
+        <section class="dash-hero">
+            <div>
+                <span class="eyebrow-tag">📊&nbsp;Explorar Tecnologia</span>
+                <h1>Seu desempenho em<span>tempo real</span></h1>
+                <p>Acompanhe métricas inteligentes, recuperação muscular, fadiga, frequência cardíaca e recomendações da
+                    IA do ATHLETIQ AI.</p>
+            </div>
+            <div class="dash-hero-media">
+                <img src="https://www.figma.com/api/mcp/asset/89470f4b-e798-49a2-9eef-eafd575ea094.png"
+                    alt="Hub tecnológico ATHLETIQ com dados de performance">
+                <div class="dash-hud">
+                    <div class="icn">✅</div>
+                    <div><span>Status</span><b>Performance Peak</b></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Métricas -->
+        <section class="dash-metrics" aria-label="Métricas em tempo real">
+            <div class="metric-card">
+                <div class="top"><span>❤️</span><span>BPM</span></div>
+                <div class="value">84</div>
+                <div class="metric-bar"><span style="width:65%; background:var(--brand);"></span></div>
+                <div class="caption">Frequência Cardíaca</div>
+            </div>
+            <div class="metric-card">
+                <div class="top"><span>🌙</span><span>SONO</span></div>
+                <div class="value">7h 42m</div>
+                <div class="caption">Qualidade: Excelente</div>
+            </div>
+            <div class="metric-card">
+                <div class="top"><span>⚡</span><span>FADIGA</span></div>
+                <div class="value" style="font-size:24px;">Moderado</div>
+                <div class="metric-bar"><span style="width:45%; background:#ba1a1a;"></span></div>
+            </div>
+            <div class="metric-card">
+                <div class="top"><span>🔄</span><span>RECUPERAR</span></div>
+                <div class="value">82%</div>
+                <div class="metric-bar"><span style="width:82%; background:var(--accent-green);"></span></div>
+            </div>
+        </section>
+
+        <!-- Hub central -->
+        <section class="dash-hub" aria-label="Insights e status do dispositivo">
+            <div class="insights-card">
+                <h3>ATHLETIQ AI Insights</h3>
+                <div class="insights-inner">
+                    <div class="insight-list">
+                        <div class="insight-item">
+                            <h4>🤖 Treino moderado recomendado hoje</h4>
+                            <p>Seus níveis de fadiga sugerem um treino de zona 2 para otimizar a recuperação.</p>
+                        </div>
+                        <div class="insight-item green">
+                            <h4>📈 Progresso Semanal +18%</h4>
+                            <p>Você superou sua meta de volume semanal. Continue assim!</p>
+                        </div>
+                    </div>
+                    <div class="score-ring"><b>88</b><span>Score AI</span></div>
+                </div>
+            </div>
+            <div class="device-card">
+                <div class="device-ring">⌚</div>
+                <div class="device-status"><span class="dot"></span>Bracelete conectado</div>
+                <p>Sincronizando dados biométricos em tempo real via Bluetooth 5.2</p>
+                <button class="btn btn-outline">Gerenciar Dispositivos</button>
+            </div>
+        </section>
+
+        <!-- Gráficos -->
+        <section class="charts-grid" aria-label="Gráficos de desempenho">
+            <div class="chart-card">
+                <h4>Recuperação Semanal</h4>
+                <div class="bar-chart">
+                    <span style="height:40%; opacity:0.4;"></span>
+                    <span style="height:53%; opacity:0.6;"></span>
+                    <span style="height:27%; opacity:0.2;"></span>
+                    <span style="height:63%; opacity:0.8;"></span>
+                    <span style="height:47%; opacity:0.5;"></span>
+                    <span style="height:37%; opacity:0.3;"></span>
+                    <span style="height:57%; background:var(--accent);"></span>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h4>Batimentos Cardíacos</h4>
+                <div
+                    style="height:140px; display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-size:12px;">
+                    Gráfico de linha em tempo real</div>
+            </div>
+            <div class="chart-card">
+                <h4>Qualidade do Sono</h4>
+                <div class="sleep-rows">
+                    <div class="sleep-row">
+                        <div class="row-top"><span>Profundo</span><b style="color:var(--brand);">32%</b></div>
+                        <div class="metric-bar"><span style="width:32%; background:var(--brand);"></span></div>
+                    </div>
+                    <div class="sleep-row">
+                        <div class="row-top"><span>Leve</span><b style="color:var(--accent-green);">58%</b></div>
+                        <div class="metric-bar"><span style="width:58%; background:var(--accent-green);"></span></div>
+                    </div>
+                    <div class="sleep-row">
+                        <div class="row-top"><span>REM</span><b style="color:var(--accent);">10%</b></div>
+                        <div class="metric-bar"><span style="width:10%; background:var(--accent);"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Micro insights -->
+        <section class="insight-strip" aria-label="Insights rápidos">
+            <div class="card">📉 Seu sono reduziu 12% nesta semana.</div>
+            <div class="card">💪 Seu corpo apresenta boa recuperação muscular.</div>
+            <div class="card">🎯 Recomendamos intensidade moderada hoje.</div>
+            <div class="card">🏆 Você evoluiu 18% no desempenho semanal.</div>
+        </section>
+
+        <!-- CTA -->
+        <section class="dash-cta" aria-labelledby="dash-cta-heading">
+            <h2 id="dash-cta-heading">Pronto para levar seu corpo ao próximo nível tecnológico?</h2>
+            <a href="produto.html" class="btn btn-outline"
+                style="border-color:#6e7882; color:var(--text-secondary); display:inline-block; padding:17px 41px;">Ver
+                Todos os Produtos</a>
+        </section>
+
+    </main>
+
+    <footer class="footer-cols">
+        <div class="footer-cols-inner">
+            <div>
+                <span class="footer-brand" style="display:block; margin-bottom:16px;">ATHLETIQ AI</span>
+                <p style="font-size:14px; color:var(--text-secondary);">Ciência, tecnologia e performance unidas para
+                    transformar sua jornada atlética através da inteligência artificial.</p>
+            </div>
+            <div>
+                <h4 style="font-size:14px;">Termos de Uso</h4>
+                <ul>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="font-size:14px;">Documentação</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

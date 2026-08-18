@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se — ATHLETIQ AI</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="index.html" class="nav-brand">ATHLETIQ AI</a>
+            <ul class="nav-links" style="list-style:none; display:flex; gap:32px;">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="/src/pages/produto.html">Produto</a></li>
+                <li><a href="/src/pages/instrucoes.html">Instruções</a></li>
+                <li><a href="/src/pages/equipe.html">Equipe</a></li>
+                <li><a href="/src/pages/referencias.html">Referências</a></li>
+                <li><a href="/src/pages/jogo.html">Jogo</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+                <a href="#" class="btn btn-primary">Começar Agora</a>
+                <button class="nav-mobile-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="auth-hero">
+            <div class="auth-copy">
+                <h1>Comece sua evolução com o<span>ATHLETIQ AI</span></h1>
+                <p>Nosso sistema monitora desempenho físico, fadiga, recuperação e auxilia na tomada de decisões de
+                    treino de forma inteligente.</p>
+                <div class="auth-copy-media">
+                    <img src="https://www.figma.com/api/mcp/asset/2404508c-c557-4575-8757-3e67ef1bdb8e.png"
+                        alt="Atleta usando o wearable ATHLETIQ durante treino">
+                </div>
+            </div>
+
+            <form class="auth-panel"
+                onsubmit="event.preventDefault(); this.querySelector('.btn-primary').textContent='Conta criada ✓';"
+                aria-label="Formulário de cadastro">
+                <div class="field"><label for="nome-cad">Nome Completo</label><input id="nome-cad" type="text"
+                        placeholder="Ex: João Silva" required></div>
+                <div class="field"><label for="email-cad">E-mail</label><input id="email-cad" type="email"
+                        placeholder="joao@atleta.com" required></div>
+                <div class="field-row">
+                    <div class="field"><label for="senha-cad">Senha</label><input id="senha-cad" type="password"
+                            placeholder="********" required></div>
+                    <div class="field"><label for="senha2-cad">Confirmar Senha</label><input id="senha2-cad"
+                            type="password" placeholder="********" required></div>
+                </div>
+                <div class="field-row">
+                    <div class="field"><label for="idade-cad">Idade</label><input id="idade-cad" type="number"
+                            placeholder="25"></div>
+                    <div class="field"><label for="peso-cad">Peso (kg)</label><input id="peso-cad" type="number"
+                            placeholder="75"></div>
+                </div>
+                <div class="field-row">
+                    <div class="field"><label for="altura-cad">Altura (cm)</label><input id="altura-cad" type="number"
+                            placeholder="180"></div>
+                    <div class="field"><label for="sono-cad">Sono (h)</label><input id="sono-cad" type="number"
+                            placeholder="8"></div>
+                </div>
+                <div class="field">
+                    <label for="objetivo-cad">Objetivo Fitness</label>
+                    <select id="objetivo-cad">
+                        <option>Emagrecer</option>
+                        <option>Ganhar massa muscular</option>
+                        <option>Melhorar performance</option>
+                        <option>Manter condicionamento</option>
+                    </select>
+                </div>
+                <label class="auth-check"><input type="checkbox" required> Concordo com os termos</label>
+                <button type="submit" class="btn btn-primary">Criar Conta</button>
+                <a href="login.html" class="btn btn-outline">Já possui conta? Entrar</a>
+            </form>
+        </section>
+
+        <section class="benefit-strip" aria-labelledby="vantagens-heading">
+            <div class="section-head">
+                <h2 id="vantagens-heading">Vantagens de Elite</h2>
+            </div>
+            <div class="benefit-strip-grid">
+                <div class="benefit-strip-item">
+                    <div class="icn" style="background:rgba(0,178,255,0.1)">📡</div><span>Monitoramento
+                        inteligente</span>
+                </div>
+                <div class="benefit-strip-item">
+                    <div class="icn" style="background:rgba(63,255,139,0.1)">❤️</div><span>Frequência cardíaca</span>
+                </div>
+                <div class="benefit-strip-item">
+                    <div class="icn" style="background:rgba(0,178,255,0.1)">🌙</div><span>Qualidade do sono</span>
+                </div>
+                <div class="benefit-strip-item">
+                    <div class="icn" style="background:rgba(63,255,139,0.1)">🔄</div><span>Recuperação muscular</span>
+                </div>
+                <div class="benefit-strip-item">
+                    <div class="icn" style="background:rgba(0,178,255,0.1)">🧠</div><span>Recomendações por IA</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-inline">
+        <div class="footer-inline-inner">
+            <span class="footer-brand">ATHLETIQ AI</span>
+            <span style="font-size:16px; color:var(--text-secondary);">© 2026 ATHLETIQ AI. Scientific Innovation for
+                High Performance.</span>
+            <nav class="footer-inline-links" aria-label="Links do rodapé">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Suporte</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
