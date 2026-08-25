@@ -25,6 +25,28 @@
     }
 })();
 
+// Login: agradecimento ao concluir
+function handleLoginSubmit(form) {
+    const btn = form.querySelector('.btn-primary');
+    btn.textContent = 'Entrando ✓';
+
+    const emailInput = form.querySelector('#email-login');
+    const nome = emailInput && emailInput.value ? emailInput.value.split('@')[0] : '';
+    showLoginThanks(nome);
+}
+
+function showLoginThanks(nome) {
+    let toast = document.querySelector('.login-thanks');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.className = 'login-thanks';
+        document.body.appendChild(toast);
+    }
+    toast.textContent = nome ? `Obrigado por entrar, ${nome}! 🎉` : 'Obrigado por entrar! 🎉';
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 4000);
+}
+
 // Nav mobile (menu hamburguer simples)
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-mobile-toggle');

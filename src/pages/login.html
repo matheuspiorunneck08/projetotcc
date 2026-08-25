@@ -12,8 +12,8 @@
 
 <header class="site-header">
     <nav class="nav" aria-label="Navegação principal">
-        <a href="index.html" class="nav-brand">ATHLETIQ AI</a>
-        <ul class="nav-links" style="list-style:none; display:flex; gap:32px;">
+        <a href="../../index.html" class="nav-brand">ATHLETIQ AI</a>
+        <ul class="nav-links">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="/src/pages/produto.html">Produto</a></li>
             <li><a href="/src/pages/instrucoes.html">Instruções</a></li>
@@ -44,7 +44,7 @@
             </div>
 
             <form class="auth-panel"
-                onsubmit="event.preventDefault(); this.querySelector('.btn-primary').textContent='Entrando ✓';"
+                onsubmit="event.preventDefault(); handleLoginSubmit(this);"
                 aria-label="Formulário de login">
                 <div class="section-head" style="text-align:center; margin-bottom:24px;">
                     <h2 style="font-size:32px;">Acesso à Conta</h2>

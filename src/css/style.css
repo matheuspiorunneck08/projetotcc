@@ -119,6 +119,7 @@ button:focus-visible {
 
 .nav-links {
     display: flex;
+    list-style: none;
     gap: 32px;
     align-items: center;
 }
@@ -779,8 +780,30 @@ button:focus-visible {
 
 /* ---------- Responsive (segue reflow do frame Mobile do Figma: nav vira menu, grids empilham) ---------- */
 @media (max-width: 960px) {
+    .nav {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
     .nav-links {
         display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 24px 40px;
+        background: var(--bg);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-hair);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        z-index: 50;
     }
 
     .nav-mobile-toggle {
@@ -4202,6 +4225,30 @@ button:focus-visible {
     .rank-cta-panel {
         padding: 32px 20px;
     }
+}
+
+.login-thanks {
+    position: fixed;
+    left: 50%;
+    bottom: 32px;
+    transform: translate(-50%, 20px);
+    background: var(--brand);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 28px;
+    border-radius: 9999px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+    z-index: 999;
+}
+
+.login-thanks.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
