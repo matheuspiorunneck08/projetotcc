@@ -31,20 +31,49 @@ function handleLoginSubmit(form) {
     btn.textContent = 'Entrando ✓';
 
     const emailInput = form.querySelector('#email-login');
-    const nome = emailInput && emailInput.value ? emailInput.value.split('@')[0] : '';
-    showLoginThanks(nome);
+    localStorage.setItem('athletiq-auth', JSON.stringify({
+        email: emailInput ? emailInput.value : ''
+    }));
+
+    showLoginThanks();
+
+    setTimeout(() => {
+        window.location.href = '../../index.html';
+    }, 1500);
 }
 
-function showLoginThanks(nome) {
+// Estado de login: alterna "Começar Agora" / "Sair da Conta" no header
+document.addEventListener('DOMContentLoaded', () => {
+    const authBtn = document.getElementById('auth-nav-btn');
+    if (!authBtn) return;
+
+    const isLoggedIn = !!localStorage.getItem('athletiq-auth');
+
+    const heroBtn = document.getElementById('hero-comecar-btn');
+    if (heroBtn) {
+        heroBtn.style.display = isLoggedIn ? 'none' : '';
+    }
+
+    if (!isLoggedIn) return;
+
+    authBtn.textContent = 'Sair da Conta';
+    authBtn.setAttribute('href', '#');
+    authBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        localStorage.removeItem('athletiq-auth');
+        location.reload();
+    });
+});
+
+function showLoginThanks() {
     let toast = document.querySelector('.login-thanks');
     if (!toast) {
         toast = document.createElement('div');
         toast.className = 'login-thanks';
         document.body.appendChild(toast);
     }
-    toast.textContent = nome ? `Obrigado por entrar, ${nome}! 🎉` : 'Obrigado por entrar! 🎉';
+    toast.textContent = 'Login realizado com sucesso! 🎉';
     toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 4000);
 }
 
 // Nav mobile (menu hamburguer simples)
